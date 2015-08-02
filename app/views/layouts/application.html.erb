@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batman Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="all-content">
+
+    <h2>A RANDOM SAMPLING OF</h2>
+    <hr class="header-divider">
+    <h1>the different<br>voices of batman</h1>
+    <h5><em>from 1989 to 2014</em></h5>
+
+    <hr class="long-divider">   
+
+  <div class="container">
+
+  <div class="scrolling-box">
+
+    <div class="box box1">
+      <%= image_tag("adamwest.png", :class => "logos") %>
+      <h5>1966 - 1968</h5>
+      <h3>Adam West</h3>
+      <h6>BATMAN (TV Series)</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip1">CLICK TO LISTEN</button>
+    </div>
+
+
+    <div class="box box2">
+      <%= image_tag("michaelkeaton.png", :class => "logos") %>
+      <h5>1989 & 1992</h5>
+      <h3>Michael Keaton</h3>
+      <h6>BATMAN RETURNS</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip2">CLICK TO LISTEN</button>
+    </div>
+
+    <div class="box box3">
+      <%= image_tag("valkilmer.png", :class => "logos") %>
+      <h5>1995</h5>
+      <h3>Val Kilmer</h3>
+      <h6>BATMAN FOREVER</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip3">CLICK TO LISTEN</button>
+    </div>
+
+    <div class="box box4">
+      <%= image_tag("georgeclooney.png", :class => "logos") %>
+      <h5>1997</h5>
+      <h3>George Clooney</h3>
+      <h6>BATMAN & ROBIN</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip4">CLICK TO LISTEN</button>
+    </div>
+
+     <div class="box box5">
+      <%= image_tag("christianbale1.png", :class => "logos") %>
+      <h5>2005 - 2012</h5>
+      <h3>Christian Bale</h3>
+      <h6>THE DARK KNIGHT</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip5">CLICK TO LISTEN</button>
+    </div>
+
+    <div class="box box6">
+      <%= image_tag("willarnett.png", :class => "logos") %>
+      <h5>2014</h5>
+      <h3>Will Arnett</h3>
+      <h6>THE LEGO MOVIE</h6>
+      <hr class="box-dividers">
+      <button class="soundclip" id="clip6">CLICK TO LISTEN</button>
+    </div>
+  </div> 
+
+  <hr class="long-divider">
+
+  <div class="flip-3d">
+    <figure>
+    <%= image_tag("christianbale1.png") %>
+    </figure>
+  </div>
+
+  <h6>SCROLL RIGHT TO SEE MORE</h6>   
+</div><!-- scrolling box div close -->
+
+
+<%= yield %>
+
+</body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="scripts/soundmanager2.js"></script>
+<script src="scripts/main.js"></script>
+<!-- <script src="scripts/main.js"></script> -->
+</html>
